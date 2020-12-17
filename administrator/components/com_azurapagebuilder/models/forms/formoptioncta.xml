@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field
+                    type="list"
+                    name="textalign"
+                    id="textalign"
+                    label="Text Align"
+                    default="center"
+                    description="Text Align">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </field>
+            <field
+                    type="text"
+                    name="buttontext"
+                    id="buttontext"
+                    default="Button Text"
+                    label="Button Text"
+                    description="Button Text" />
+            <field name="heading" 
+                    id="heading" 
+                    type="text" 
+                    default="Hello, world!"
+                    label="Heading" 
+                    description="Heading" />
+            <!-- <field
+                    type="AzuraFontIcon"
+                    name="buttonicon"
+                    id="buttonicon"
+                    class="input-medium"
+                    default="fa fa-hand-o-down"
+                    label="Icon"
+                    description="Button Icon"
+                    /> -->
+            <field name="url" 
+                id="url" 
+                type="text" 
+                default="http://"
+                label="URL (Link)" 
+                description="URL (Link)" />
+            <field
+                    type="list"
+                    name="buttoncolor"
+                    id="buttoncolor"
+                    label="Button Type"
+                    default="btn-primary"
+                    description="Button Type">
+                <option value="btn-default">Default</option>
+                <option value="btn-primary">Primary</option>
+                <option value="btn-success">Success</option>
+                <option value="btn-info">Info</option>
+                <option value="btn-warning">Warning</option>
+                <option value="btn-danger">Danger</option>
+                <option value="btn-link">Link</option>
+            </field>
+            <field
+                    type="list"
+                    name="buttonsize"
+                    id="buttonsize"
+                    label="Button Size"
+                    default="btn-lg"
+                    description="Button Size">
+                <option value="">Default</option>
+                <option value="btn-lg">Large</option>
+                <option value="btn-sm">Small</option>
+                <option value="btn-xs">Extra Small</option>
+            </field>
+            <field
+                    type="list"
+                    name="buttonposition"
+                    id="buttonposition"
+                    label="Button Position"
+                    default="center"
+                    description="Button Position">
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+            </field>
+            <field
+                    type="list"
+                    name="target"
+                    id="target"
+                    label="Target"
+                    default=""
+                    description="Target">
+                <option value="">Select Target</option>
+                <option value="_blank">New window</option>
+                <option value="_self">Current window</option>
+                <option value="_parent">Parent window</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuracta" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="ctaContent"
+                    id="ctaContent"
+                    label="Content (Can be use with html tags.)"
+                    class="input-xlarge"
+                    description="Content (Can be use with html tags.)"
+                    default="This is a simple hero element, a simple cta-style for calling extra attention to featured content or information."
+                    cols="24"
+                    rows="9" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="7"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

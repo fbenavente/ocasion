@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="k2" method="upgrade">
+    <name>PLG_CUSTOMIMAGEFIELD</name>
+    <author>CTHthemes</author>
+    <creationDate>June 2014</creationDate>
+    <authorEmail>contact@cththemes.com</authorEmail>
+    <authorUrl>CTHthemes.com</authorUrl>
+    <copyright>Copyright Info  CTHthemes.com</copyright>
+    <license>License Info  CTHthemes.com</license>
+    <version>1.0.0</version>
+    <description>PLG_CUSTOMIMAGEFIELD_DESC</description>
+    <files>
+        <filename plugin="customimagefield">customimagefield.php</filename>
+        <filename>index.html</filename>
+        <filename>customimagefield.xml</filename>
+        <folder>language</folder>
+    </files>
+    <fields group="item-image">
+        <fieldset>
+            <field name="k2_customimage" type="text" label="K2 Custom Image Link" description="K2 Custom Image Link" />
+        </fieldset>
+    </fields>
+
+</extension>

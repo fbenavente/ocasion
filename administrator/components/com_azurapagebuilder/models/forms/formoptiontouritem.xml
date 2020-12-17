@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID"
+                     />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    label="Extra Class"
+                    description="Extra Class"
+                    default="" />
+            <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    label="Title"
+                    description="Title"
+                    />
+            <!-- <field
+                    type="AzuraFontIcon"
+                    name="iconClass"
+                    id="iconClass"
+                    class="input-medium"
+                    label="Icon"
+                    description="Icon"
+                    /> -->
+            <!-- <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuratabtoggleitem" client="site"/> -->
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="tinymceeditor"
+                    name="ttContent"
+                    id="ttContent"
+                    label="Item Content (Can be use with html tags.)"
+                    class="input-xlarge"
+                    description="Item Content (Can be use with html tags.)"
+                    cols="24"
+                    rows="15" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="3"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

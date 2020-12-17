@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="azura_elements">
+		<fieldset name="azura_elements" addfieldpath="/administrator/components/com_azurapagebuilder/models/fields">
+
+			<!-- <field
+				type="AzuraElement"
+				name="Section"
+				typename="AzuraSection" 
+				iconclass="fa fa-archive"
+				haschildren="yes"
+				/>
+			<field
+				type="AzuraElement"
+				name="Container"
+				typename="AzuraContainer" 
+				iconclass="fa fa-archive"
+				haschildren="yes"
+				/> -->
+			<field
+				type="AzuraElement"
+				name="Row"
+				description="Create Row/Column layout grid"
+				category="structure"
+				typename="AzuraRow" 
+				icon="row-icon.png"
+				iconclass="fa fa-bars"
+				hasownchild="yes" 
+				childname="Column"
+				childtypename="AzuraColumn"
+				/>
+			<!-- <field
+				type="AzuraElement"
+				name="Container"
+				description="Create elements container inside column"
+				category="structure"
+				typename="AzuraContainer" 
+				icon="row-icon.png"
+				iconclass="fa fa-bars"
+				hasownchild="no" 
+				iscontainer="yes"
+				/> -->
+			<field
+				type="AzuraElement"
+				name="Text Block"
+				description="A block of text with WYSIWYG editor"
+				category="content"
+				typename="AzuraHtml" 
+				icon="html-icon.png"
+				iconclass="fa fa-code"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="TinyMCE Editor"
+				description="A block of text with TinyMCE editor"
+				category="content"
+				typename="AzuraTinyMce" 
+				icon="html-icon.png"
+				iconclass="fa fa-code"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Separator"
+				description="Horizontal separator line"
+				category="content"
+				typename="AzuraSeparator" 
+				icon="separator-icon.png"
+				iconclass="fa fa-minus"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Separator Text"
+				description="Horizontal separator line with heading"
+				category="content"
+				typename="AzuraSeparatorText" 
+				icon="separatortext-icon.png"
+				iconclass="fa fa-minus"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Message Box"
+				description="Notification box"
+				category="content"
+				typename="AzuraAlert" 
+				icon="alert-icon.png"
+				iconclass="fa fa-bullhorn"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Facebook Like"
+				description="Facebook like button"
+				category="social"
+				typename="AzuraFacebookLike" 
+				icon="facebooklike-icon.png"
+				iconclass="fa fa-facebook"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Twittername Button"
+				description="Share on Twitter button"
+				category="social"
+				typename="AzuraTwitterShare" 
+				icon="twittershare-icon.png"
+				iconclass="fa fa-twitter"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Twitter Feeds"
+				description="Twitter Feeds"
+				category="social"
+				typename="AzuraTweets" 
+				icon="twittershare-icon.png"
+				iconclass="fa fa-tweets"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Google+ Button"
+				description="Recommend on Google"
+				category="social"
+				typename="AzuraGooglePlus" 
+				icon="googleplus-icon.png"
+				iconclass="fa fa-google-plus"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Pinterest"
+				category="social"
+				description="Pinterest button"
+				typename="AzuraPinterest" 
+				icon="pinterest-icon.png"
+				iconclass="fa fa-pinterest"
+				hasownchild="no"
+				/>
+			<!-- <field
+				type="AzuraElement"
+				name="FQA"
+				description="Toggle element for Q&amp;A block"
+				category="default"
+				typename="AzuraFQA" 
+				icon="fqa-icon.png"
+				iconclass="fa fa-answer"
+				hasownchild="no"
+				
+				/> -->
+			<field
+				type="AzuraElement"
+				name="Single Image"
+				description="Single image with CSS animation"
+				category="content"
+				typename="AzuraImage"
+				icon="image-icon.png" 
+				iconclass="fa fa-image"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Image Gallery"
+				description="Responsive image gallery"
+				category="content"
+				typename="AzuraGallery" 
+				icon="gallery-icon.png"
+				iconclass="fa fa-gallery"
+				hasownchild="yes" 
+				childname="Gallery Item"
+				childtypename="AzuraGalleryItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Image Carousel"
+				description="Animated carousel with images"
+				category="content"
+				typename="AzuraBsCarousel"
+				icon="bscarousel-icon.png" 
+				iconclass="fa fa-sliders"
+				hasownchild="yes" 
+				childname="Carousel Item"
+				childtypename="AzuraBsCarouselItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Tabs"
+				description="Tabbed content"
+				category="content"
+				typename="AzuraTabs" 
+				icon="tabs-icon.png"
+				iconclass="fa fa-cube"
+				hasownchild="yes" 
+				childname="Tab Item"
+				childtypename="AzuraTabsItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Tour"
+				description="Vertical tabbed content"
+				category="content"
+				typename="AzuraTour" 
+				icon="tour-icon.png"
+				iconclass="fa fa-cube"
+				hasownchild="yes" 
+				childname="Tour Item"
+				childtypename="AzuraTourItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Accordion"
+				description="Collapsible content panels"
+				category="content"
+				typename="AzuraAccordion" 
+				icon="accordion-icon.png"
+				iconclass="fa fa-cogs"
+				hasownchild="yes" 
+				childname="Accordion Item"
+				childtypename="AzuraAccordionItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Articles Grid"
+				description="Articles in grid view"
+				category="content"
+				typename="AzuraArticlesGrid" 
+				icon="articlesgrid-icon.png"
+				iconclass="fa fa-article"
+				haschildren="no"
+				/>
+			<!-- <field
+				type="AzuraElement"
+				name="K2 Items Grid"
+				description="K2 Articles in grid view"
+				category="default"
+				typename="AzuraK2Grid" 
+				icon="k2grid-icon.png"
+				iconclass="fa fa-k2"
+				haschildren="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="K2 Items Slider"
+				description="Slider with K2 Articles"
+				category="default"
+				typename="AzuraK2Slider" 
+				icon="k2slider-icon.png"
+				iconclass="fa fa-k2"
+				haschildren="no"
+				/> -->
+			<field
+				type="AzuraElement"
+				name="Articles Slider"
+				description="Slider with Content Articles"
+				category="content"
+				typename="AzuraArticlesSlider" 
+				icon="articlesslider-icon.png"
+				iconclass="fa fa-article"
+				haschildren="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Joomla Module"
+				description="Insert Joomla module to your page"
+				category="structure"
+				typename="AzuraModule" 
+				icon="module-icon.png"
+				iconclass="fa fa-qcode"
+				haschildren="no"
+				/>
+
+			<field
+				type="AzuraElement"
+				name="Flex Slider"
+				description="Flex slider element"
+				category="content"
+				typename="AzuraFlexSlider" 
+				icon="tabs-icon.png"
+				iconclass="fa fa-cube"
+				hasownchild="yes" 
+				childname="Slide Item"
+				childtypename="AzuraFlexSliderItem"
+				/>
+			<field
+				type="AzuraElement"
+				name="Button"
+				description="Eye catching button"
+				category="content"
+				typename="AzuraButton" 
+				icon="button-icon.png"
+				iconclass="fa fa-link"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Button 2"
+				description="Button link to Joomla site menu"
+				category="content"
+				typename="AzuraButtonLink" 
+				icon="buttonlink-icon.png"
+				iconclass="fa fa-link"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Call to Action button"
+				description="Catch visitors attention with CTA block"
+				category="content"
+				typename="AzuraCTA" 
+				icon="cta-icon.png"
+				iconclass="fa fa-cta"
+				hasownchild="no"
+				/>
+			<!-- <field
+				type="AzuraElement"
+				name="Call to Action button 2"
+				description="Catch visitors attention with CTA block"
+				category="default"
+				typename="AzuraCTA2" 
+				icon="cta2-icon.png"
+				iconclass="fa fa-cta2"
+				hasownchild="no"
+				/> -->
+			<field
+				type="AzuraElement"
+				name="Video Player"
+				description="Embeded Youtube/Vimeo Video Player"
+				category="content"
+				typename="AzuraVideo" 
+				icon="video-icon.png"
+				iconclass="fa fa-video-camera"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="mb.YTPlayer"
+				description="Use Youtube video background on your page"
+				category="content"
+				typename="AzuraVideoBg" 
+				icon="video-icon.png"
+				iconclass="fa fa-video-camera"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Google Map"
+				description="Map block"
+				category="content"
+				typename="AzuraGMap" 
+				icon="gmap-icon.png"
+				iconclass="fa fa-map-marker"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Raw HTML"
+				description="Output raw html code on your page"
+				category="structure"
+				typename="AzuraText" 
+				icon="text-icon.png"
+				iconclass="fa fa-font"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Raw JS"
+				description="Output raw javascript code on your page"
+				category="structure"
+				typename="AzuraJS" 
+				icon="js-icon.png"
+				iconclass="fa fa-code"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Flickr Widget"
+				description="Image feed from your flickr account"
+				category="social"
+				typename="AzuraFlickr" 
+				icon="flickr-icon.png"
+				iconclass="fa fa-flickr"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Progress Bar"
+				description="Animated progress bar"
+				category="content"
+				typename="AzuraProgress" 
+				icon="progress-icon.png"
+				iconclass="fa fa-tachometer"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Pie chart"
+				description="Animated pie chart"
+				category="content"
+				typename="AzuraPieChart" 
+				icon="piechart-icon.png"
+				iconclass="fa fa-piechart"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Empty Space"
+				description="Add spacer with custom height"
+				category="content"
+				typename="AzuraSpacer" 
+				icon="spacer-icon.png"
+				iconclass="fa fa-spacer"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Custom Heading"
+				description="Add custom heading text"
+				category="content"
+				typename="AzuraHeading" 
+				icon="heading-icon.png"
+				iconclass="fa fa-header"
+				hasownchild="no"
+				/>
+			<field
+				type="AzuraElement"
+				name="Contact Form"
+				description="Add AJAX contact form block"
+				category="content"
+				typename="AzuraContactForm" 
+				icon="contactform-icon.png"
+				iconclass="fa fa-paper-plane-o"
+				hasownchild="no"
+				/>
+			<!-- <field
+				type="AzuraElement"
+				name="Fast Subscribe"
+				description="AJAX Subscribe from"
+				category="content"
+				typename="AzuraSubscribe" 
+				icon="gallery-icon.png"
+				iconclass="fa fa-work"
+				hasownchild="no"
+				/> -->
+			<!-- <field
+				type="AzuraElement"
+				name="Ajax Login"
+				description="AJAX User Login Form"
+				category="content"
+				typename="AzuraAjaxLogin" 
+				icon="gallery-icon.png"
+				iconclass="fa fa-work"
+				hasownchild="no"
+				/> -->
+		</fieldset>
+	</fields>
+</form>

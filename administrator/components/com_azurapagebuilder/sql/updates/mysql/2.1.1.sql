@@ -1,0 +1,1 @@
+ALTER TABLE `#__azurapagebuilder_pages` MODIFY COLUMN `id` int(11) unsigned NOT NULL AUTO_INCREMENT;

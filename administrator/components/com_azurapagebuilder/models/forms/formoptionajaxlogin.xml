@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field name="itemid" type="menuitem" default="" label="Login Redirect Menu" description="Select a menu item will redirect to after login success." >
+                <option value="">Default</option>
+            </field>
+            <field name="itemidout" type="menuitem" default="" label="Logout Redirect Menu" description="Select a menu item will redirect to after logout success." >
+                <option value="">Default</option>
+            </field>
+            <!-- <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    label="Title"
+                    description="Title" />
+            
+            <field
+                    type="text"
+                    name="receiveemail"
+                    id="receiveemail"
+                    label="Receive Email"
+                    description="Receive Email" />
+            <field
+                    type="text"
+                    name="thanksmessage"
+                    id="thanksmessage"
+                    label="Thanks Message"
+                    description="Thanks Message" />
+            <field
+                    type="textarea"
+                    name="emailsubject"
+                    id="emailsubject"
+                    label="Email Subject"
+                    description="Email Subject"
+                    />
+            
+            <field
+                    type="radio"
+                    name="showsubject"
+                    id="showsubject"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show Subject"
+                    description="Show Subject instead of hidden field" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showwebsite"
+                    id="showwebsite"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show Website Field"
+                    description="Show Website Field" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+                    type="radio"
+                    name="sendascopy"
+                    id="sendascopy"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show SendAsCopy Field"
+                    description="Show SendAsCopy Field" >
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="Form ID" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuracontactform" client="site"/> -->
+            
+        </fieldset>
+    </fields>
+<!--     <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="contactIntro"
+                    id="contactIntro"
+                    label="Introduction"
+                    class="input-xlarge"
+                    description="Introduction"
+                    cols="22"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="6"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="gallery"
+                    id="gallery"
+                    default="gallery"
+                    label="Gallery Rel"
+                    description="Gallery Rel (Leave empty if want open image in prettyPhoto as single photo)"
+                    />
+            <field
+                    type="list"
+                    name="gridwidth"
+                    id="gridwidth"
+                    default="20"
+                    
+                    label="Grid width"
+                    description="Gallery grid with in percent"
+                    >
+                <option value="10">10 Cols</option>
+                <option value="20">5 Cols</option>
+                <option value="25">4 Cols</option>
+                <option value="33">3 Colds</option>
+                <option value="50">2 Cols</option>
+                <option value="100">1 Column</option>
+            </field>
+            
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Image Class"
+                    />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuragallery" client="site"/>
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="caption"
+                    id="caption"
+                    label="Caption"
+                    class="input-xlarge azura_w300 azura_h275"
+                    description="Image Caption" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

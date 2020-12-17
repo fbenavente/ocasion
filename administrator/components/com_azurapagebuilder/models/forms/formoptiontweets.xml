@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="twittername"
+                    id="twittername"
+                    default="Cththemes"
+                    label="Twitter Name"
+                    description="Twitter Name"
+            />
+            <field
+                    type="text"
+                    name="consumer_key"
+                    id="consumer_key"
+                    default="b1gNFU5p55j7GR0vACWyZf0j8"
+                    label="Consumer Key"
+                    description="Consumer Key"
+            />
+            <field
+                    type="text"
+                    name="consumer_key_secret"
+                    id="consumer_key_secret"
+                    default="V0a7UkD0XTuP4zdoJoBPlpbQC9TtGk8ucotXRZZZP4MYv7TkK2"
+                    label="Consumer Secret"
+                    description="Consumer Secret"
+            />
+            <field
+                    type="text"
+                    name="access_token"
+                    id="access_token"
+                    default="2549127786-T8zZA3d7cJcgDkI2kwbfQ2XeU8exphGZu3hZVvK"
+                    label="Access Token"
+                    description="Access Token"
+            />
+            <field
+                    type="text"
+                    name="access_token_secret"
+                    id="access_token_secret"
+                    default="pQXlpkL9CSCIsEnGF5xgsjKObDRWcD77thGkFG9RLzgjs"
+                    label="Access Token Secret"
+                    description="Access Token Secret"
+            />
+            <field
+                    type="text"
+                    name="count"
+                    id="count"
+                    default="3"
+                    label="Tweets count"
+                    description="Number of tweets feeds"
+            />
+            
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file."
+            />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuratweets" client="site"/>
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="message"
+                    id="message"
+                    label="Tweet Text"
+                    default=""
+                    class="input-xlarge azura_w300"
+                    description="Tweet Text"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

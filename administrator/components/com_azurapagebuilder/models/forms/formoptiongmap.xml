@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID"/>
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field
+                    type="text"
+                    name="mapheight"
+                    id="mapheight"
+                    label="Map Height"
+                    description="Enter map height in pixels. Example: 250 or leave it empty to make map responsive."
+                    />
+            <field
+                    type="AzuraGMapSelect"
+                    name="selectMap"
+                    id="selectMap"
+                    class="input-medium"
+                    label="Select Map"
+                    description="Select Map Coordinates">
+            </field>
+            <field
+                    type="text"
+                    name="gmaplat"
+                    id="gmaplat"
+                    default="44.434596"
+                    label="Latitude"
+                    description="Latitude"
+                    />
+            <field
+                    type="text"
+                    name="gmaplog"
+                    id="gmaplog"
+                    default="26.080533"
+                    label="Longitude"
+                    description="Longitude"
+                    />
+            <field
+                    type="radio"
+                    name="gmappancontrol"
+                    id="gmappancontrol"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Pan Control"
+                    description="Pan Control"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="gmapzoomcontrol"
+                    id="gmapzoomcontrol"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Zoom Control"
+                    description="Zoom Control"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="gmaptypecontrol"
+                    id="gmaptypecontrol"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Type Control"
+                    description="Type Control"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="gmapstreetviewcontrol"
+                    id="gmapstreetviewcontrol"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Street view Control"
+                    description="Street view Control"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="radio"
+                    name="gmapscrollwheel"
+                    id="gmapscrollwheel"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Scroll Wheel"
+                    description="Scroll Wheel"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field 
+                name="gmapzoom" id="gmapzoom" 
+                type="text" default="5" 
+                label="Zoom" 
+                description="Zoom" />
+
+            <field 
+                name="gmaptypeid" id="gmaptypeid"
+                type="list" 
+                default="ROADMAP" 
+                label="Map Type" 
+                description="Map Type" >
+                    <option value="HYBRID">HYBRID</option>
+                    <option value="ROADMAP">ROADMAP</option>
+                    <option value="SATELLITE">SATELLITE</option>
+                    <option value="TERRAIN">TERRAIN</option>
+            </field>
+            
+        </fieldset>
+    </fields>
+<!--     <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="mapembedcode"
+                    id="mapembedcode"
+                    label="Gmap Embed Code"
+                    class="input-xlarge azura_w580"
+                    description="Visit Google maps (https://mapsengine.google.com/) to create your map. 1) Find location 2) Click 'Share' and make sure map is public on the web 3) Click folder icon to reveal 'Embed on my site' link 4) Copy iframe code and paste it here." />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="6"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

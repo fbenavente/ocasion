@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="azura" method="upgrade">
+	<name>plg_azura_azuraoption</name>
+	<author>Cththemes</author>
+	<creationDate>September 2014</creationDate>
+	<copyright>Copyright (C) 2014 Cththemes.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>cththemes@gmail.com</authorEmail>
+	<authorUrl>cththemes.com</authorUrl>
+	<version>2.3.0</version>
+	<description><![CDATA[
+                Azura Options - Azura Plugin. Info and Support: <a href="mailto:cththemes@gmail.com">cththemes@gmail.com</a> - <a href="index.php?option=com_plugins">Go to Plugins Manager</a> 
+            ]]></description>
+	<files>
+		<filename plugin="azuraoption">azuraoption.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>options</folder>
+		<folder>elements</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_azura_azuraoption.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_azura_azuraoption.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field	name="showanimation" type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					description="Show animation options tab"
+					label="Show Animation Tab">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+</extension>

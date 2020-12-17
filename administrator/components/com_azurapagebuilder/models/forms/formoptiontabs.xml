@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID"
+                     />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    label="Extra Class"
+                    description="Extra Class" />
+            <field
+                    type="text"
+                    name="defaultactive"
+                    id="defaultactive"
+                    default="1"
+                    label="Default Active"
+                    description="Default Active Item"
+                    />
+            <field
+                    type="radio"
+                    name="tabstyle"
+                    id="tabstyle"
+                    class="btn-group btn-group-yesno"
+                    default="tab"
+                    label="Style"
+                    description="Style" >
+                <option value="tab">Tabs</option>
+                <option value="pill">Pills</option>
+            </field>
+            <field
+                    type="radio"
+                    name="usejustified"
+                    id="usejustified"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="Justified Tabs"
+                    description="Justified Tabs" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="fade"
+                    id="fade"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    label="Use Fade Effect"
+                    description="Use Fade Effect" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuratabs" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="url"
+                    id="url"
+                    label="Url to pin"
+                    description="Enter Url to pin."
+            />
+            <field
+                    type="list"
+                    name="size"
+                    id="size"
+                    default="28"
+                    label="Button Size"
+                    description="Button Size" >
+                <option value="28">Large</option>
+                <option value="20">Small</option>
+                <!-- <option value="standard">Standard</option>
+                
+                <option value="tall">Tall</option> -->
+            </field>
+            <field
+                    type="list"
+                    name="annotation"
+                    id="annotation"
+                    default="above"
+                    label="Count Position"
+                    description="Count Position" >
+                <option value="above">Above</option>
+                <option value="beside">Beside</option>
+                <option value="none">None</option>
+                
+            </field>
+            <field
+                    type="list"
+                    name="shape"
+                    id="shape"
+                    
+                    label="Shape"
+                    description="Shape" >
+                <option value="">Rectangular</option>
+                <option value="round">Round</option>
+                <!-- <option value="none">None</option> -->
+                
+            </field>
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file."
+            />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurapinterest" client="site"/>
+        </fieldset>
+    </fields>
+<!--     <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="message"
+                    id="message"
+                    label="Tweet Text"
+                    default=""
+                    class="input-xlarge azura_w300"
+                    description="Tweet Text"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

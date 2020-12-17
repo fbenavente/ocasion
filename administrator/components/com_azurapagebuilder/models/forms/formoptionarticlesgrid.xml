@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field 
+                    name="category" 
+                    type="sql" 
+                    id="category"
+                    label="Select a category"
+                    description="Choose category get items from" 
+                    query="SELECT id AS value, title AS category FROM #__categories WHERE extension='com_content' AND published=1" />
+            <field
+                    type="text"
+                    name="limit"
+                    id="limit"
+                    default="All"
+                    label="Limit"
+                    description="Number or All"
+                    />
+            <field
+                    type="list"
+                    name="order"
+                    id="order"
+                    default="created"
+                    label="Order"
+                    description="Order"
+                    >
+                <option value="created" >Created</option>
+                <option value="id" >ID</option>
+                <option value="ordering" >Ordering</option>
+            </field>
+            <field
+                    type="list"
+                    name="orderDir"
+                    id="orderDir"
+                    default="ASC"
+                    label="Order Direction"
+                    description="Order Direction"
+                    >
+                <option value="ASC" >Ascending</option>
+                <option value="DESC" >Descending</option>
+            </field>
+            <field
+                    type="list"
+                    name="columngrid"
+                    id="columngrid"
+                    default="3"
+                    label="Grid Columns"
+                    description="Grid columns"
+                    >
+                <option value="6" >6</option>
+                <option value="4" >4</option>
+                <option value="3" >3</option>
+                <option value="2" >2</option>
+                <option value="1" >1</option>
+                
+            </field>
+            <!-- <field
+                    type="radio"
+                    name="fetchchild"
+                    id="fetchchild"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Fetch Child Items"
+                    description="Fetch Child Items"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showfilter"
+                    id="showfitle"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show Filter"
+                    description="Show Filter"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field> -->
+            <field
+                    type="radio"
+                    name="showthumbnail"
+                    id="showthumbnail"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show Thumbnail"
+                    description="Show Thumbnail Image"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showtitle"
+                    id="showtitle"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show Title"
+                    description="Show Title"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showdate"
+                    id="showdate"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show Date"
+                    description="Show Created Date"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showintrotext"
+                    id="showintrotext"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show Introtext"
+                    description="Show Introtext"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="showmore"
+                    id="showmore"
+                    default="1"
+                    class="btn-group btn-group-yesno"
+                    label="Show More"
+                    description="Show Show More button"
+                    >
+                <option value="1" >Yes</option>
+                <option value="0" >No</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraarticlesgrid" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>  
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="6"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

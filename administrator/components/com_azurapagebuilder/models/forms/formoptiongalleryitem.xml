@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="AzuraMedia"
+                    name="slideimage"
+                    id="slideimage"
+                    label="Image Source"
+                    class="input-small"
+                    preview="false"
+                    description="Image Source" />
+            <field
+                    type="radio"
+                    name="usepretty"
+                    id="usepretty"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Use PrettyPhoto"
+                    description="Use PrettyPhoto"
+                    >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </field>
+            <field
+                    type="AzuraMedia"
+                    name="largeimage"
+                    id="largeimage"
+                    label="Full Size Image"
+                    class="input-small"
+                    preview="false"
+                    description="Full Size Image (Or Youtube and Vimeo video link)" />
+            <field
+                    type="text"
+                    name="imagelink"
+                    id="imagelink"
+                    default=""
+                    label="Image Link"
+                    description="Image Link"
+                    />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Image Class"
+                    />
+            <!-- <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraimage" client="site"/> -->
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="caption"
+                    id="caption"
+                    label="Caption"
+                    class="input-xlarge azura_w300 azura_h275"
+                    description="Image Caption" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

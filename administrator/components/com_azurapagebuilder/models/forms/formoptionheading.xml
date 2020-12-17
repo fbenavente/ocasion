@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="list"
+                    name="elementtag"
+                    id="elementtag"
+                    default="h3"
+                    
+                    label="Header Tag"
+                    description="Header Tag" >
+                <option value="h1">H1</option>
+                <option value="h2">H2</option>
+                <option value="h3">H3</option>
+                <option value="h4">H4</option>
+                <option value="h5">H6</option>
+                <option value="p">P</option>
+                <option value="div">DIV</option>
+                
+            </field>
+            <field
+                    type="list"
+                    name="textalign"
+                    id="textalign"
+                    default="left"
+                    
+                    label="Text Align"
+                    description="Text Align" >
+                <option value="left">Left</option>
+                <option value="right">Right</option>
+                <option value="center">Center</option>
+                <option value="justify">Justify</option>
+            </field>
+
+            <field
+                    type="text"
+                    name="fontsize"
+                    id="fontsize"
+                    label="Font Size (Unit included: 36px)"
+                    description="Font Size (Unit included: 36px)" />
+            
+            <field
+                    type="text"
+                    name="lineheight"
+                    id="lineheight"
+                    label="Line Height (Unit included: 36px)"
+                    description="Line Height (Unit included: 36px)" />
+            <field
+                    type="color"
+                    name="font_color"
+                    default=""
+                    id="font_color"
+                    label="Color"
+                    description="Color"
+                    />
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraheading" client="site"/>
+            
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="aceeditor"
+                    name="headingContent"
+                    id="headingContent"
+                    label="Text"
+                    
+                    description="Text"
+                    cols="22"
+                    rows="3" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="3"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="true"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

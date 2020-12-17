@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="url"
+                    id="url"
+                    label="Url to like"
+                    description="Enter Url to like and share (Default: empty)."
+            />
+            <field
+                    type="list"
+                    name="type"
+                    id="type"
+                    default="danger"
+                    label="Type"
+                    description="Select button type" >
+                <option value="standard">Standard</option>
+                <option value="button_count">Button Count</option>
+                <option value="box_count">Box Count</option>
+                <option value="button">Button</option>
+                
+            </field>
+            <field
+                    type="list"
+                    name="action"
+                    id="action"
+                    default="like"
+                    label="Action"
+                    description="Plugin Action" >
+                <option value="like">Like</option>
+                <option value="recommend">Recommend</option>
+                
+            </field>
+            <field
+                    type="text"
+                    name="width"
+                    id="width"
+                    default=""
+                    label="Plugin Width"
+                    description="Plugin Width"
+            />
+            <field
+                    type="text"
+                    name="height"
+                    id="height"
+                    default=""
+                    label="Plugin Height"
+                    description="Plugin Height"
+            />
+            <field
+                    type="radio"
+                    name="face"
+                    id="face"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show friend's face"
+                    description="Show friend's face" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="share"
+                    id="share"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Share button"
+                    description="Include share button also" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="uselike"
+                    id="uselike"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Use Like Box"
+                    description="Use as Like box plugin" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="posts"
+                    id="posts"
+                    default="0"
+                    class="btn-group btn-group-yesno"
+                    label="Show posts"
+                    description="Show posts" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="list"
+                    name="scheme"
+                    id="scheme"
+                    default="light"
+                    
+                    label="Color Scheme"
+                    description="Color Scheme" >
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </field>
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file."
+            />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurafacebooklike" client="site"/>
+        </fieldset>
+    </fields>
+   <!--  <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="message"
+                    id="message"
+                    label="Message"
+                    default="Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum."
+                    class="input-xlarge azura_w300 azura_h275"
+                    description="Message"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="6"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

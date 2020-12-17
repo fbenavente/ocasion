@@ -1,0 +1,94 @@
+fieldset.checkboxes ul {margin-left: 0;}
+fieldset.checkboxes li input {float: none !important;margin-bottom: 5px !important;}
+fieldset.checkboxes li {
+    list-style: none outside none;
+    display: inline-block;
+    margin: 2px 10px;
+    text-align: center;
+}
+fieldset.checkboxes li label{font-weight: 600 !important;}
+/*Layout Content*/
+.radio.layoutcontent {padding-left: 0px;}
+.radio.layoutcontent input {display: none !important;}
+.themelayout {
+	float: left;
+	width:100px;
+	height: 100px;
+	/*background:#ccc;*/
+	background: url('img/rs.png');
+	border-radius: 5px;
+	border: 2px solid;
+	border-color: #ccc; /*#ccc #e6e6e6 #e6e6e6 #ccc;*/
+	text-indent: -9999px;
+	display: inline-block !important;
+	margin-right: 10px;
+	line-height: 100px;
+	text-align: center;
+}
+.themelayout {text-indent: 0px; }
+.themelayout:hover{border-color: #888;}
+.active.themelayout {border-color: #888;}
+
+.themelayout.default {
+	/*background-color: #ff6347;*/
+	/*background-image: url('img/1c.png');*/
+	text-indent: unset;
+	color:#fff;
+	/*background-color: transparent;*/
+}
+.themelayout.home {background: url('img/home.png');}
+.themelayout.fullwidth {background: url('img/fl.png');}
+.themelayout.leftsidebar {background: url('img/ls.png');}
+.themelayout.rightsidebar {background: url('img/rs.png');}
+
+
+/*Presets styles*/
+.radio.colorpresets {padding-left: 0px;}
+.radio.colorpresets input {display: none !important;}
+.preset {
+	width:50px;
+	height: 50px;
+	background:#ccc;
+	border-radius: 5px;
+	border: 2px solid;
+	border-color: #ccc; /*#ccc #e6e6e6 #e6e6e6 #ccc;*/
+	text-indent: -9999px;
+	display: inline-block !important;
+	margin-right: 10px;
+	line-height: 50px;
+	text-align: center;
+}
+.preset {text-indent: 0px; color:#fff;}
+.preset:hover{border-color: #888;}
+.active.preset {border-color: #888;}
+
+.preset.default {
+	background-color: #ff4800;
+	text-indent: unset;
+	color:#fff;
+	/*background-color: transparent;*/
+}
+.preset.blue {background-color: #18c0cf;}
+.preset.green {background-color: #a2c43b;}
+.preset.mint {background-color: #2ccb86;}
+.preset.orange {background-color: #f27e1f;}
+.preset.pink {background-color: #f273d6;}
+.preset.purple {background-color: #815fb5;}
+.preset.ruby {background-color: #e51966;}
+.preset.yellow {background-color: #ebb800;}
+
+.w650{
+	width: 650px;
+}
+.h50{
+	height: 50px;
+}
+.h100{
+	height: 100px;
+}
+.h150{
+	height: 150px;
+}
+.h250 {
+	height: 250px;
+}

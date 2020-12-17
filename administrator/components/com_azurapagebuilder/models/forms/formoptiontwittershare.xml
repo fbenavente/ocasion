@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="url"
+                    id="url"
+                    label="Url to tweet"
+                    description="Enter Url to tweet."
+            />
+            <field
+                    type="text"
+                    name="screenname"
+                    id="screenname"
+                    label="Via Name"
+                    description="Via Name"
+            />
+            <field
+                    type="text"
+                    name="related"
+                    id="related"
+                    label="Related"
+                    description="Related"
+            />
+            <field
+                    type="list"
+                    name="count"
+                    id="count"
+                    default="horizontal"
+                    label="Count Position"
+                    description="Count Position" >
+                <option value="horizontal">Horizontal</option>
+                <option value="vertical">Vertical</option>
+                <option value="none">None</option>
+                
+                
+            </field>
+            
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file."
+            />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuratwittershare" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="message"
+                    id="message"
+                    label="Tweet Text"
+                    default=""
+                    class="input-xlarge azura_w300"
+                    description="Tweet Text"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

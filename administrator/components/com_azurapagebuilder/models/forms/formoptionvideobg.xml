@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+            <field
+                    type="text"
+                    name="class"
+                    id="class"
+                    default="player"
+                    label="Class"
+                    description="Class"
+                    />
+            <field
+                    type="text"
+                    name="link"
+                    id="link"
+                    class="azura_w97"
+                    label="Video Link"
+                    description="Video Link. Please use one of these URL format: https://www.youtube.com/watch?v=V2rifmjZuKQ, http://youtu.be/V2rifmjZuKQ or V2rifmjZuKQ" />
+            <field
+                    type="radio"
+                    name="autoplay"
+                    class="btn-group btn-group-yesno"
+                    id="autoplay"
+                    label="Autoplay"
+                    default="1"
+                    description="Autoplay"
+                    
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+            <field
+                    type="radio"
+                    name="loop"
+                    id="loop"
+                    label="Loop"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Loop"
+                    
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+            <field
+                    type="radio"
+                    name="mute"
+                    id="mute"
+                    label="Mute"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Mute"
+                    
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+            <field
+                    type="text"
+                    name="vol"
+                    id="vol"
+                    default="50"
+                    label="Vol"
+                    description="1 to 100 (number) set the volume level of the video" />
+            <field
+                    type="list"
+                    name="quality"
+                    id="quality"
+                    label="Quality"
+                    default="default"
+                    description="Quality"
+                    
+                    >
+                    <option value="default">Default</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="hd720">HD720</option>
+                    <option value="hd1080">HD1080</option>
+                    <option value="highres">Highres</option>
+            </field>
+            <field
+                    type="list"
+                    name="ratio"
+                    id="ratio"
+                    label="Ratio"
+                    default="4/3"
+                    description="Ratio"
+                    
+                    >
+                    <option value="4/3">4/3</option>
+                    <option value="16/9">16/9</option>
+            </field>
+            <field
+                    type="text"
+                    name="opacity"
+                    id="opacity"
+                    default="1"
+                    label="Video Opacity"
+                    description="Video Opacity" />
+            <field
+                    type="text"
+                    name="containment"
+                    id="containment"
+                    label="Containment"
+                    default="self"
+                    description="(string) the CSS selector of the DOM element where you want the video background; if not specified it takes the {body}; if set to {self} the player will be instanced on that element."
+                    />
+            <field
+                    type="text"
+                    name="startat"
+                    id="startat"
+                    default="20"
+                    label="Start At"
+                    description="Set the seconds the video should start at." />
+            <field
+                    type="radio"
+                    name="showcontrols"
+                    id="showcontrols"
+                    label="Show Controls"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Show or hide the controls bar at the bottom of the page."
+                    
+                    >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuravideobg" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="true"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

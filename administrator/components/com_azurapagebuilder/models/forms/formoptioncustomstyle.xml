@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                name="customStyle"
+                type="aceeditor" class="h_450 azura_100per" mode="css"/>
+        </fieldset>
+    </fields>
+</form>

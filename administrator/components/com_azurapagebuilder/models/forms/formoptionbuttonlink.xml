@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field
+                    type="text"
+                    name="buttontext"
+                    id="buttontext"
+                    default="Text on button"
+                    label="Text on Button"
+                    description="Text on Button" />
+            <field
+                    type="AzuraFontIcon"
+                    name="buttonicon"
+                    id="buttonicon"
+                    class="input-medium"
+                    default="fa fa-hand-o-down"
+                    label="Icon"
+                    description="Button Icon"
+                    />
+            <field name="url" 
+                id="url" 
+                type="menuitem" 
+                label="Select a menu item" 
+                description="Select a menu item" />
+            <field
+                    type="list"
+                    name="buttoncolor"
+                    id="buttoncolor"
+                    label="Button Type"
+                    default="btn-default"
+                    description="Button Type">
+                <option value="btn-default">Default</option>
+                <option value="btn-primary">Primary</option>
+                <option value="btn-success">Success</option>
+                <option value="btn-info">Info</option>
+                <option value="btn-warning">Warning</option>
+                <option value="btn-danger">Danger</option>
+                <option value="btn-link">Link</option>
+            </field>
+            <field
+                    type="list"
+                    name="buttonsize"
+                    id="buttonsize"
+                    label="Button Size"
+                    default=""
+                    description="Button Size">
+                <option value="">Default</option>
+                <option value="btn-lg">Large</option>
+                <option value="btn-sm">Small</option>
+                <option value="btn-xs">Extra Small</option>
+            </field>
+            
+            <field
+                    type="list"
+                    name="target"
+                    id="target"
+                    label="Target"
+                    default=""
+                    description="Target">
+                <option value="">Select Target</option>
+                <option value="_blank">New window</option>
+                <option value="_self">Current window</option>
+                <option value="_parent">Parent window</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurabuttonlink" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

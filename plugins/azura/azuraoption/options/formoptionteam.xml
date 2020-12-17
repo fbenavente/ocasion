@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <!-- <field
+                    type="list"
+                    name="viewmode"
+                    id="viewmode"
+                    default="slider"
+                   
+                    label="View Mode"
+                    description="View mode">
+                <option value="grid">Grid</option>
+                <option value="slider">Slider</option>
+            </field> -->
+            <!-- <field
+                    type="list"
+                    name="bgcolor"
+                    id="bgcolor"
+                    default="white"
+                    label="Background Color"
+                    description="Select defined background color class or using image style option."
+                    >
+                <option value="color">Color</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="grey">Grey</option>
+                <option value="white">White</option>
+                <option value="img">Image</option>
+            </field>
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    default=""
+                    label="Section ID"
+                    description="Section ID used for style purpose and animated scrolling effect" /> -->
+            <field
+                    type="text"
+                    name="autoplay"
+                    id="autoplay"
+                    class="input-xlarge"
+                    label="AutoPlay"
+                    default="false"
+                    description="Boolen or number in mili-second (5000)" />
+            <field
+                    type="text"
+                    name="items"
+                    id="items"
+                    class="input-xlarge"
+                    label="Items"
+                    default="4"
+                    description="Number of slide items that show in desktop screen" />
+            <field
+                    type="radio"
+                    name="issingle"
+                    id="issingle"
+                    label="Is Single?"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Set this to Yes if you want to display single item only" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="text"
+                    name="slidespeed"
+                    id="slidespeed"
+                    label="Slide Speed"
+                    class="input-xlarge"
+                    default="200"
+                    description="Slide speed in milliseconds" />
+            <field
+                    type="radio"
+                    name="shownav"
+                    id="shownav"
+                    label="Show Navigation"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Set this to Yes if you want to display navigation buttons" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurateam" client="site"/>
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="textarea"
+                    name="textContent"
+                    id="textContent"
+                    label="Text Content (Can be use with html tags.)"
+                    class="textelement-content"
+                    description="Text Content (Can be use with html tags)"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

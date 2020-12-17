@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="AzuraMedia"
+                    name="src"
+                    id="src"
+                    label="Image Source"
+                    class="input-small"
+                    preview="false"
+                    description="Image Source" />
+            <field 
+                name="alignment" 
+                id="alignment" 
+                type="list" 
+                default="left"
+                label="Image Alignment">
+                <option value="left">Align left</option>
+                <option value="right">Align right</option>
+                <option value="center">Align center</option>
+            </field>
+            <field name="style" id="style"
+                type="list" default="default" 
+                label="Image Style"
+            >
+                <option class="default" value="default">Default</option>
+                <option class="box_rounded" value="box_rounded">Rounded</option>
+                <option class="box_border" value="box_border">Border</option>
+                <option class="box_outline" value="box_outline">Outline</option>
+                <option class="box_shadow" value="box_shadow">Shadow</option>
+                <option class="box_shadow_border" value="box_shadow_border">Bordered shadow</option>
+                <option class="box_shadow_3d" value="box_shadow_3d">3D Shadow</option>
+                <option class="box_circle" value="box_circle">Circle</option>
+                <option class="box_border_circle" value="box_border_circle">Circle Border</option>
+                <option class="box_outline_circle" value="box_outline_circle">Circle Outline</option>
+                <option class="box_shadow_circle" value="box_shadow_circle">Circle Shadow</option>
+                <option class="box_shadow_border_circle" value="box_shadow_border_circle">Circle Border Shadow</option>
+            </field>
+            <field name="bordercolor"
+                id="bordercolor"
+                type="list" label="Border Color" 
+                default="grey"
+            >
+            <option class="blue" value="blue">Blue</option>
+            <option class="turquoise" value="turquoise">Turquoise</option>
+            <option class="pink" value="pink">Pink</option>
+            <option class="violet" value="violet">Violet</option>
+            <option class="peacoc" value="peacoc">Peacoc</option>
+            <option class="chino" value="chino">Chino</option><option class="mulled_wine" value="mulled_wine">Mulled Wine</option>
+            <option class="vista_blue" value="vista_blue">Vista Blue</option>
+            <option class="black" value="black">Black</option><option class="grey" value="grey">Grey</option><option class="orange" value="orange">Orange</option>
+            <option class="sky" value="sky">Sky</option><option class="green" value="green">Green</option>
+            <option class="juicy_pink" value="juicy_pink">Juicy pink</option>
+            <option class="sandy_brown" value="sandy_brown">Sandy brown</option>
+            <option class="purple" value="purple">Purple</option>
+            <option class="white" value="white">White</option>
+        </field>
+        <field 
+                name="usepretty" 
+                id="usepretty" 
+                type="radio" 
+                default="0"
+                class="btn-group btn-group-yesno"
+                label="Use PrettyPhoto"
+                description="Use PrettyPhoto plugin to show large image">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+        </field>
+        <field
+                    type="AzuraMedia"
+                    name="largeimage"
+                    id="largeimage"
+                    label="Large Image"
+                    class="input-small"
+                    preview="false"
+                    description="Large Image used with prettyphoto option." />
+        <field
+                    type="text"
+                    name="imagelink"
+                    id="imagelink"
+                    default=""
+                    label="Image Link"
+                    description="Image Link"
+                    />
+            <!-- <field
+                    type="text"
+                    name="title"
+                    id="title"
+                    label="Image Title"
+                    description="Image Title" /> -->
+            <!-- <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="Image ID"
+                    description="Image ID" /> -->
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Image Class"
+                    />
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraimage" client="site"/>
+        </fieldset>
+    </fields>
+    <!-- <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="AzuraMedia"
+                    name="src"
+                    id="src"
+                    label="Image Source"
+                    class="input-small"
+                    preview="false"
+                    description="Image Source" />
+        </fieldset>
+    </fields> -->
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="5"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="true"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

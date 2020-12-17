@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="template" client="site" method="upgrade">
+        <name>Momentum</name>
+        <creationDate>June 2014</creationDate>
+        <author>CTHthemes</author>
+        <authorEmail>contact.cththemes@gmail.com</authorEmail>
+        <authorUrl>CTHthemes.com</authorUrl>
+        <copyright>Copyright Info  CTHthemes.com</copyright>
+        <license>License Info  CTHthemes.com</license>
+        <version>3.3.0</version>
+        <description><![CDATA[
+                CTHthemes Momentum - Simple Creative One Page Joomla Template. Info and Support: <a href="mailto:cththemes@gmail.com">cththemes@gmail.com</a> - <a href="index.php?option=com_templates">Go to Template Manager</a> 
+            ]]></description>
+        <files>
+				<filename>component.php</filename>
+				<filename>error.php</filename>
+                <filename>index.html</filename>
+                <filename>index.php</filename>
+                <filename>template_preview.png</filename>
+                <filename>template_thumbnail.png</filename>
+                <filename>templateDetails.xml</filename>
+            <folder>css</folder>
+            <folder>fields</folder>
+            <folder>fonts</folder>
+			<folder>html</folder>
+			<folder>images</folder>
+            <folder>js</folder>
+            <folder>language</folder>
+			<folder>layout</folder>
+			
+        </files>
+		<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.tpl_momentum.ini</language>
+			<language tag="en-GB">en-GB/en-GB.tpl_momentum.sys.ini</language>
+		</languages>
+        <positions>
+            <position>main-menu</position>
+            
+            
+            <position>breadcrumbs</position>
+            <position>blog-title</position>
+
+            <position>left-sidebar</position>
+            <position>position-8</position>
+            <position>right-sidebar</position>
+            <position>position-7</position>
+
+            <position>position-1</position>
+            <position>position-2</position>
+            <position>position-3</position>
+            <position>position-4</position>
+            <position>position-5</position>
+            <position>position-6</position>
+            <position>position-9</position>
+
+            <position>404-content</position>
+            <position>footer-copyright</position>
+            <position>footer-social</position>
+            <position>debug</position>
+        </positions>
+        
+         <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="favicon" type="media" label="Favicon"
+                    description="Favicon" directory=""/>
+                <field name="logoImage" type="media" label="Logo Image"
+                    description="Logo Image" directory=""/>
+                <field name="logoText" type="text" label="Logo Text"
+                    description="Logo Text" default=""/>
+                <field 
+                    name="transparentheader" 
+                    type="radio" 
+                    label="Transparent Header" 
+                    class="btn-group btn-group-yesno"
+                    description="Transparent Header" 
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="textarea" class="input-xxlarge" name="customcsslinks" label="Custom CSS Links" description="Custom CSS Links (related path to theme folder)" />
+                <field type="textarea" class="input-xxlarge" name="customjslinks" label="Custom JS Links" description="Custom JS Links (related path to theme folder)" />
+                 <field name="disableMooTools" type="radio" label="Disable Mootools" class="btn-group btn-group-yesno"
+                    description="Use for front-end editing only" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="disableTooltip" type="radio" label="Disable Tooltip Script" class="btn-group btn-group-yesno"
+                    description="Set Yes to fix disapper link on mouse over" default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+            </fieldset>
+            <fieldset name="cththemes_layout" >
+                
+                <field name="hideComponentErea" type="radio" label="Hide Component Area" class="btn-group btn-group-yesno"
+                    description="Hide Component Area" default="0">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </field>
+
+                <field name="layoutstyle" type="radio" class="layoutcontent" label="Layout Content"
+                    description="Layout Content" default="rightsidebar">
+                    
+                    <option value="home">Home Page</option>
+                    <option value="fullwidth">Fullwidth</option>
+                    <option value="leftsidebar">Left Sidebar</option>
+                    <option value="rightsidebar">Right Sidebar</option>
+                </field>
+                
+
+            </fieldset>
+            <fieldset name="cththemes_googlefont" addfieldpath="/templates/momentum/fields">
+
+                <field type="CthScript"/>
+
+                <field 
+                    name="useDifferentFont" 
+                    type="radio" 
+                    label="Use Different Fonts" 
+                    class="btn-group btn-group-yesno"
+                    description="Use Different Fonts" 
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field type="textarea" name="importfont" class="w650 h100" label="Fonts Script" description="" filter="raw"/>
+                <field type="textarea" name="fontstyle" class="w650 h250" label="Font Styles" description="" filter="raw"/>
+
+                <field name="fontReset" type="fontReset" label="Reset Fonts" description="Reset Fonts" />
+            </fieldset>
+
+            <fieldset name="cththemes_colors" >
+
+
+                <field name="preset" type="radio" default="default" class="colorpresets" label="Presets" description="Presets">
+                    <option value="default">Default</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <!-- <option value="mint">Mint</option>
+                    <option value="orange">Orange</option>
+                    <option value="pink">Pink</option>
+                    <option value="purple">Purple</option> -->
+                    <option value="ruby">Ruby</option>
+                    <option value="yellow">Yellow</option>
+                </field>
+                <field 
+                    name="overrideColor" 
+                    type="radio" 
+                    label="Use Your Color" 
+                    class="btn-group btn-group-yesno"
+                    description="Use Your Color" 
+                    default="0">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field 
+                    name="baseColor" 
+                    type="color"
+                    default="#ff4800"
+                    label="Select Color"
+                    description="Select Your Own Color"/>
+                
+                <field name="colorReset" type="ColorReset" label="Reset Colors" description="Reset Colors" />
+            </fieldset>
+             <fieldset name="cththemes_404error" >
+                <field name="errorbg" type="media" label="404 Page Background"
+                    description="404 Page Background" directory="" class="input-large"/>
+                <field 
+                    name="errorbgcolor" 
+                    type="color"
+                    default=""
+                    label="Erro Bg Color"
+                    description="Error Bg Color"/>
+                <!-- <field type="textarea" name="errortext" label="404 Error Text" description="404 Error Text" default="the page requestd could not be found"/> -->
+                
+            </fieldset>
+            <fieldset name="cththemes_custom_code" >
+
+                <field type="textarea" name="customstylecode" class="w650 h150" label="Header Custom Scripts" description="Header Custom Scripts" filter="raw"/>
+                <field type="textarea" name="customscriptcode" class="w650 h150" label="Footer Custom Scripts" description="Footer Custom Scripts" filter="raw"/>
+                
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

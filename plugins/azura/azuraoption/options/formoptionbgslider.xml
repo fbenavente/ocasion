@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            <field
+                    type="list"
+                    name="mode"
+                    id="mode"
+                    label="Mode"
+                    
+                    default="fade"
+                    description="Type of transition between slides" >
+                <option value="horizontal">Horizontal</option>
+                <option value="vertical">Vertical</option>
+                <option value="fade">Fade</option>
+            </field>
+            <!-- <field
+                    type="radio"
+                    name="auto"
+                    id="auto"
+                    label="Auto"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Slides will automatically transition" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field> -->
+            <field
+                    type="text"
+                    name="speed"
+                    id="speed"
+                    label="Slide Speed"
+                    class="input-xlarge"
+                    default="1000"
+                    description="Slide transition duration (in ms)"/>
+            <!-- <field
+                    type="radio"
+                    name="pager"
+                    id="pager"
+                    label="Show Pagination"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    description="Show Pagination" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field>
+            <field
+                    type="radio"
+                    name="controls"
+                    id="controls"
+                    label="Show Controls"
+                    class="btn-group btn-group-yesno"
+                    default="1"
+                    description="Show Controls Button" >
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </field> -->
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    default="home"
+                    label="Section ID"
+                    description="Section ID used for style purpose and animated scrolling effect" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <!-- <field
+                    type="text"
+                    name="scroll_link"
+                    id="scroll_link"
+                    default="#intro"
+                    label="Button Link"
+                    description="Button Link"
+                    />
+            <field
+                    type="text"
+                    name="scroll_class"
+                    id="scroll_class"
+                    default="scrollto mouse"
+                    label="Button Link Class"
+                    description="Class for button link anchor"
+                    /> -->
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azurabgslider" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementContent">
+        <fieldset name="elementContentFieldSet">
+            <field
+                    type="aceeditor"
+                    name="textContent"
+                    id="textContent"
+                    label="Intro Text"
+                    class="textelement-content"
+                    description="Intro Text"
+                    cols="24"
+                    rows="7" />
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="true"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="0"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>

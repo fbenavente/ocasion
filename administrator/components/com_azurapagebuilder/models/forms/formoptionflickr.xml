@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="elementAttrs">
+        <fieldset name="elementAttrsFieldSet">
+            
+            <field
+                    type="text"
+                    name="id"
+                    id="id"
+                    label="ID"
+                    description="ID" />
+
+            <field
+                    type="text"
+                    name="extraclass"
+                    id="extraclass"
+                    label="Extra Class"
+                    description="Extra Class"
+                    />
+            <field
+                    type="text"
+                    name="accountid"
+                    id="accountid"
+                    default="37304598@N02"
+                    label="Flickr Account"
+                    description="Flickr Account" />
+            <field
+                    type="text"
+                    name="count"
+                    id="count"
+                    default="6"
+                    label="Count"
+                    description="Number of photo to feed" />
+            <field
+                    type="list"
+                    name="viewtype"
+                    id="viewtype"
+                    default="grid"
+                    label="View Type"
+                    description="View Type"
+                    >
+                <option value="grid">Default</option>
+                <option value="colorbox">ColorBox</option>
+                <option value="cycle">Cycle</option>
+            </field>
+            <field 
+                name="layout" label="Shortcode Layout"  description="Shortcode Layout" type="AzuraShortcodelayout" shortcode="azuraflickr" client="site"/>
+        </fieldset>
+    </fields>
+    <fields name="elementSettings">
+        <fieldset name="elementSettingsFieldSet">
+            <field
+                    type="AzuraElementSetting"
+                    name="showStyleTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="showAnimationTab"
+                    setting="false"
+                    default="true"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="numberLeftSettings"
+                    setting="4"
+                    default="all"/>
+            <field
+                    type="AzuraElementSetting"
+                    name="contentFirst"
+                    setting="false"
+                    default="false"/>
+        </fieldset>
+    </fields>
+</form>
